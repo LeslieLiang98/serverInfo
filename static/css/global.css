@@ -1,0 +1,58 @@
+.title{
+	line-height: 70px !important;
+}
+.title >a,.title >span{
+	color: aqua;
+	font-size: 1.3em;
+}
+.layui-header{
+	height: 70px !important;
+}
+.head-nav{
+	margin-right: 30px;
+}
+.layui-nav .nav-item{
+	line-height: 70px !important;
+}
+.layui-nav .nav-item>a{
+	color: aqua;
+	font-size: 1.1em;
+}
+.nav-item .layui-nav-child{
+	top: 75px !important;
+	z-index: 999;
+}
+.icon{
+	margin-right: 10px;
+}
+.layui-side{
+	width: 240px !important;
+	top: 70px !important;
+}
+.layui-side-scroll{
+	width: 240px !important;
+}
+.layui-nav-tree{
+	width: 240px !important;
+}
+.layui-nav-tree .tree-nav-item>a{
+	font-size: 1.05em;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color: #dddddd;
+}
+.tree-nav-item >.layui-nav-child a{
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.layui-body{
+	top: 70px !important;
+	left: 240px;
+}
+.content-body{
+	padding: 20px;
+}
+.footer{
+	left: 240px !important;
+	text-align: center;
+}
