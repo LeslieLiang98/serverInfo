@@ -7,11 +7,23 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
 	<meta name="renderer" content="webkit">
 	{% block title %}
-	<title>Server Info</title>
+	<title>系统状态监控后台</title>
 	{% endblock %}
-	<link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
-	
+	{% block content %}
+	<div class="system-basic-info">
+		系统已监控时间：${ sysUpTime }
+		<hr>
+		<div class="cpu-info-group">
+			<div id="cpuUser"></div>
+			<div id="cpuSystem"></div>
+			<div id="cpuFree"></div>
+		</div>
+	</div>
+	{% endblock %}
 </body>
+{% block script %}
+<script type="text/javascript" src="/static/js/basic.js"></script>
+{% endblock %}
 </html>

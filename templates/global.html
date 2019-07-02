@@ -51,7 +51,10 @@
 			<!-- 左侧垂直导航栏 -->
 			<!-- 内容主体 -->
 			<div class="layui-body">
-				<div class="content-body">内容主体区域</div>
+				<div class="content-body">
+					{% block content %}
+					{% endblock %}
+				</div>
 			</div>
 			<!-- 内容主体 -->
 			<!-- 固定底部 -->
@@ -62,10 +65,16 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript" src="/static/js/jquery-3.2.1.min.js"></script>
 <script type="text/javascript" src="/static/layui.js"></script>
+<script type="text/javascript" src="/static/js/vue.js"></script>
+<script type="text/javascript" src="/static/js/highcharts.js"></script>
 <script type="text/javascript">
+	var token = '{{ csrf_token }}';
 	layui.use(['element'], function(){
 		var element = layui.element;
 	});
 </script>
+{% block script %}
+{% endblock %}
 </html>

@@ -21,3 +21,7 @@ urlpatterns = [
     # url(r'^admin/', admin.site.urls),
     url(r'^$', main.Index.as_view(), name = 'index'),
 ]
+
+urlpatterns += [
+	url(r'api/system/get/system-basic-info/', main.GetSystemInfo.as_view(), name = 'getSystemInfo'),
+]

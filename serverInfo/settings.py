@@ -122,3 +122,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
+
+# SNMP Config
+HOST = '172.16.1.4'
+COMMUNITY = 'zwliang98'
+PORT = 161
+
+# SNMP OID
+SYS_UP_TIME = '.1.3.6.1.2.1.1.3.0'

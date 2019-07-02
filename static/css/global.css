@@ -1,5 +1,6 @@
 .title{
 	line-height: 70px !important;
+	width: 240px !important;
 }
 .title >a,.title >span{
 	color: aqua;
@@ -48,9 +49,15 @@
 .layui-body{
 	top: 70px !important;
 	left: 240px;
+	background-color: #ECF0F5;
 }
 .content-body{
-	padding: 20px;
+	padding: 15px;
+	margin: 15px;
+	background-color: #FFF;
+	box-shadow: 0 2px 2px 0 rgba(0,0,0,.2);
+	border-radius: 0 0 5px 3px;
+	border-top: 3px solid #D2D6DE;
 }
 .footer{
 	left: 240px !important;
