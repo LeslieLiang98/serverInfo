@@ -9,16 +9,22 @@
 	{% block title %}
 	<title>系统状态监控后台</title>
 	{% endblock %}
+	{% block css %}
+	<style type="text/css">
+		.system-info-group div{
+			display: inline-block;
+		}
+	</style>
+	{% endblock %}
 </head>
 <body>
 	{% block content %}
 	<div class="system-basic-info">
 		系统已监控时间：${ sysUpTime }
 		<hr>
-		<div class="cpu-info-group">
-			<div id="cpuUser"></div>
-			<div id="cpuSystem"></div>
-			<div id="cpuFree"></div>
+		<div class="system-info-group">
+			<div id="cpuUseInfo"></div>
+			<div id="memoryInfo"></div>
 		</div>
 	</div>
 	{% endblock %}
